@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txtActNomCat"
+        android:text="@string/txtActNomCat"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/ibCerrar"
+        android:src="@drawable/ic_cerrar"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etNuevoNomCat"
+        android:hint="@string/etNuevoNomCat"
+        android:layout_below="@id/txtActNomCat"
+        android:layout_marginTop="10dp"
+        android:inputType="textCapWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnActualizarNomCat"
+        android:text="@string/btnActualizarNomCat"
+        android:layout_below="@id/etNuevoNomCat"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="true"
+        app:cornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Cliente.Bottom_Nav_Fragments_Cliente.FragmentTiendaC">
+
+    <!--Mensaje de bienvenida-->
+    <TextView
+        android:id="@+id/bienvenidaTXT"
+        android:text="@string/bienvenidaTXT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Mi dirección-->
+    <TextView
+        android:id="@+id/direccionTXT"
+        android:text="@string/direccionTXT"
+        app:drawableStartCompat="@drawable/gps"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Productos aleatorios-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productosAleatRV"
+        tools:listitem="@layout/item_producto_aleatorio"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--TXT Categorias-->
+    <TextView
+        android:text="@string/txtCategorias"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/azul_marino_oscuro"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Categorias de los productos-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriasRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_categoria_c"/>
+
+</LinearLayout>

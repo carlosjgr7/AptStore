@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tvInfoCliente"
+        android:text="@string/tvInfoCliente"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/azul_marino_oscuro"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/ibCerrar"
+        android:src="@drawable/ic_cerrar"
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivPerfil"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_perfil"
+        android:layout_below="@id/tvInfoCliente"
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <!--Nombres-->
+    <TextView
+        android:id="@+id/txtNombresC"
+        android:text="@string/txtNombresC"
+        android:layout_below="@id/ivPerfil"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/azul_marino_oscuro"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvNombresC"
+        android:text="@string/tvNombresC"
+        android:layout_below="@id/txtNombresC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <!--Dni-->
+    <TextView
+        android:id="@+id/txtDniC"
+        android:text="@string/txtDniC"
+        android:layout_below="@id/tvNombresC"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/azul_marino_oscuro"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDniC"
+        android:text="@string/tvDniC"
+        android:layout_below="@id/txtDniC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <!--Teléfono-->
+    <TextView
+        android:id="@+id/txtTelC"
+        android:text="@string/txtTelC"
+        android:layout_below="@id/tvDniC"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_marino_oscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvTelC"
+        android:text="@string/tvTelC"
+        android:layout_below="@id/txtTelC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <!--Dirección-->
+    <TextView
+        android:id="@+id/txtDireccionC"
+        android:text="@string/txtDireccionC"
+        android:layout_below="@id/tvTelC"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_marino_oscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDireccionC"
+        android:text="@string/tvDireccionC"
+        android:layout_below="@id/txtDireccionC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDireccionC"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLlamar"
+            android:text="@string/btnLlamar"
+            app:cornerRadius="8dp"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/azul_marino_oscuro"
+            app:icon="@drawable/ico_telefono"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSms"
+            android:text="@string/btnSms"
+            app:cornerRadius="8dp"
+            android:textAllCaps="true"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/azul_marino_oscuro"
+            app:icon="@drawable/ico_sms"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
